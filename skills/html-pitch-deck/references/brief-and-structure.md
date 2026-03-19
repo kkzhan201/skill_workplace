@@ -1,6 +1,6 @@
 # Brief And Structure
 
-Use this reference when the user has not provided enough presentation detail or when you need a fast slide outline.
+Use this reference during the first two stages of the workflow: outline definition and markdown copy lock.
 
 ## Minimum Brief
 
@@ -16,7 +16,18 @@ Helpful but optional:
 5. Slide count
 6. Existing content, screenshots, or notes
 
-If the brief is still thin after that, proceed with sensible assumptions and state them.
+If the brief is still thin after that, do not silently invent business content. State the gaps and ask for confirmation on the outline or copy draft with those gaps called out.
+
+## Stage 1: Outline First
+
+Before writing copy, decide:
+
+1. How many slides the deck should have
+2. What each slide is responsible for
+3. What order best supports the story
+4. Where dense information should be concentrated
+
+The output of stage 1 is an outline, not presentation copy.
 
 ## Default Deck Shapes
 
@@ -50,18 +61,13 @@ Use for investors, customers, launches, or product storytelling.
 6. Closing
    Summary and CTA
 
-## Content Expansion Rules
+## Outline Rules
 
-When the user gives too little content, strengthen the deck instead of leaving generic placeholders.
-
-- Problem slide:
-  Add industry context, user quotes, quantified pain, or workflow friction.
-- Solution slide:
-  Add technical explanation, product mechanics, or competitive framing.
-- Roadmap slide:
-  Add versions, milestones, dates, and dependencies.
-- Next-step or closing slide:
-  Distill concrete asks, decisions, owners, or CTA language.
+- Keep each slide centered on one message.
+- Prefer `3` columns, `2`-panel splits, or a single hero composition as structural options, but do not choose the final component system yet.
+- If slide count is not specified, default to `4-6`.
+- If the audience is senior, bias toward decisions, trade-offs, and next actions.
+- If the audience is external, bias toward narrative clarity and proof.
 
 ## Tone Mapping
 
@@ -72,10 +78,55 @@ When the user gives too little content, strengthen the deck instead of leaving g
 - Data-driven:
   Metrics, charts, bars, and count-up treatments should carry more weight than narrative slogans.
 
-## Structure Heuristics
+## Stage 2: Markdown Copy Lock
 
-- Keep each slide centered on one message.
-- Prefer `3` columns, `2`-panel splits, or a single hero composition.
-- If slide count is not specified, default to `4-6`.
-- If the audience is senior, bias toward decisions, trade-offs, and next actions.
-- If the audience is external, bias toward narrative clarity and proof.
+After the outline is accepted or sufficiently clear, write the deck copy as markdown and stop for confirmation.
+
+Required rule:
+
+- Do not proceed to component selection or HTML until the user confirms the markdown copy.
+
+If information is missing, mark it explicitly instead of inventing it. Use placeholders like:
+
+- `TODO: confirm metric`
+- `TODO: add customer quote`
+- `TODO: confirm roadmap date`
+
+## Markdown Copy Template
+
+Use a structure like this:
+
+```md
+# Deck Copy Draft
+
+## Slide 1 - Cover
+### Goal
+What this slide needs to communicate.
+
+### Copy
+- Title:
+- Subtitle:
+- Supporting line:
+
+### Notes
+- Optional presenter/date line
+
+## Slide 2 - Problem
+### Goal
+What this slide needs to communicate.
+
+### Copy
+- Section headline:
+- Point 1:
+- Point 2:
+- Point 3:
+
+### Notes
+- TODO items or user-supplied constraints
+```
+
+## Gap Handling Rules
+
+- Prefer exposing missing inputs over filling them with speculation.
+- Only draft extra business content when the user explicitly asks you to help write it.
+- If you do draft missing content, label it clearly as a proposed draft for confirmation.
