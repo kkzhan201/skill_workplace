@@ -1,0 +1,4 @@
+interface:
+  display_name: "HTML Pitch Deck"
+  short_description: "Build animated single-file HTML pitch decks"
+  default_prompt: "Use $html-pitch-deck to create a browser-ready, single-file presentation."
