@@ -315,6 +315,17 @@ addEventListener('touchend', (e) => {
 - Progress bars on roadmap or version slides
 - Count-up numbers on metrics slides
 
+## Playground Effects
+
+When the baseline system is not enough, read [playground-effects.md](playground-effects.md).
+
+Use it with restraint:
+
+- choose one effect family that matches the slide goal
+- do not combine multiple hero effects on the same slide unless the composition is intentionally built around them
+- cover, closing, metric, and technical explainer slides are the best candidates
+- if a recipe depends on `--accent3` or later tokens, derive them from the active palette before use
+
 ## Recolor Workflow
 
 When the user asks to change colors, do not rebuild the deck. Update the system in this order:

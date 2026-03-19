@@ -15,6 +15,7 @@ Keep the main skill lean. Load the references only when needed:
 
 - Read [references/brief-and-structure.md](references/brief-and-structure.md) when defining slide logic, resolving missing brief details, or drafting the markdown copy for user confirmation.
 - Read [references/visual-system.md](references/visual-system.md) only after the user has confirmed the copy and you are ready to map content to components or implement the HTML.
+- Read [references/playground-effects.md](references/playground-effects.md) only after the copy is confirmed and only when a slide genuinely benefits from a more expressive effect than the baseline system provides.
 
 ## Workflow
 
@@ -43,7 +44,12 @@ Keep the main skill lean. Load the references only when needed:
    - do not write HTML, CSS, or JS
 
 4. Map confirmed copy to presentation patterns.
-   After the user confirms the markdown copy, choose the best presentation method for each slide. Components must serve the locked copy rather than reshaping it. Use [references/visual-system.md](references/visual-system.md) only at this stage and later.
+   After the user confirms the markdown copy, choose the best presentation method for each slide. Components must serve the locked copy rather than reshaping it. Use [references/visual-system.md](references/visual-system.md) for baseline layout and motion, and [references/playground-effects.md](references/playground-effects.md) when a slide needs an accent effect from the playground library.
+
+   Playground rules:
+   - prefer one hero effect or one supporting effect per slide, not a stack of unrelated effects
+   - use playground effects to reinforce the message, not to compensate for weak copy
+   - if a playground recipe requires extra accent variables, derive them from the chosen palette instead of mixing random colors
 
 5. Build one standalone HTML file.
    Requirements:
