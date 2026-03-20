@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research-ppt-v1/ppt_job.schema.json",
+  "title": "PPT Job",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["topic", "slide_count", "style_template", "locale", "image_model", "attachments"],
+  "properties": {
+    "topic": { "type": "string", "minLength": 1 },
+    "slide_count": { "type": "integer", "enum": [2, 5, 8] },
+    "style_template": { "type": "string", "enum": ["scientific", "hand_drawn"] },
+    "locale": { "type": "string", "minLength": 2 },
+    "image_model": { "type": "string", "enum": ["banana_pro", "jimeng"] },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    }
+  }
+}

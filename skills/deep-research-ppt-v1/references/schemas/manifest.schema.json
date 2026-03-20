@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research-ppt-v1/manifest.schema.json",
+  "title": "Render Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "session_id", "slide_images", "pdf", "slide_count", "errors"],
+  "properties": {
+    "status": { "type": "string", "enum": ["success", "failed"] },
+    "session_id": { "type": "string" },
+    "slide_images": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "pdf": { "type": "string" },
+    "slide_count": { "type": "integer", "minimum": 0 },
+    "errors": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
